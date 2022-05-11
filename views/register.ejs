@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<!-- header -->
+<%- include('layouts/header') -%>
+<!-- header -->
+<body>
+<!-- navbar -->
+<%- include('layouts/navbar') -%>
+<!-- navbar -->
+
+
+<!-- section -->
+<div class="w3-container max-card-size" style="margin-top:50px; margin-bottom: 80px;">
+  <h1>Create An Account</h1>
+  <% if(errors != null && errors.length > 0){ %>
+    <% for(var i = 0; i < errors.length; i++){ %>
+      <h3><%= errors[i] %></h3>
+    <% } %>
+  <% } %>
+  <p>
+    Already have an account? <a href="/auth/login" class="w3-text-blue">Login</a> here.
+  </p>
+  <form method="post" action="/users/register" enctype="multipart/form-data">
+    <label>UserName</label>
+    <input class="w3-input" name="username" type="text">
+    <br><br>
+    <label>Email</label>
+    <input class="w3-input" name="email" type="email">
+    <br><br>
+    <label>Password</label>
+    <input class="w3-input" name="password" type="password">
+    <br><br>
+    <label>Image</label>
+    <input class="w3-input" name="image" type="file" accept="images/*">
+    <br><br>
+    <label>Text</label>
+    <textarea class="w3-input" name="about" id="about" cols="30" rows="10"></textarea>
+    <br><br>
+    <button type="submit" class="w3-bar w3-black w3-button w3-ripple" style="border-radius:4px;">Register</button>
+  </form>
+</div>
+
+<%- include('layouts/footer') -%>
+
+</body>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script></script>
+</html>

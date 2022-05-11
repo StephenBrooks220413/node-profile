@@ -1,0 +1,29 @@
+<nav class="w3-bar w3-border w3-card-4">
+    <div id="nav1">
+      <a href="/" class="w3-bar-item w3-button w3-mobile">Home</a>
+      <a href="/about" class="w3-bar-item w3-button w3-mobile">About</a>
+      <% if(!loggedIn){ %>
+        <a href="/auth/login" class="w3-bar-item w3-button w3-right w3-mobile">Login</a>
+        <a href="/auth/register" class="w3-bar-item w3-button w3-right w3-mobile">Register</a>
+      <% } %>
+        <% if(loggedIn){ %>
+            <a href="/catalog" class="w3-bar-item w3-button w3-mobile">Catalog</a>
+            <a href="/auth/logout" class="w3-bar-item w3-button w3-right w3-mobile">Logout</a>
+        <% } %>
+    </div>
+    <div id="nav2" class="w3-dropdown-hover">
+      <button class="w3-button"><i class="fa fa-bars w3-large"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-border">
+        <a href="/" class="w3-bar-item w3-button">Home</a>
+        <a href="/about" class="w3-bar-item w3-button">About</a>
+          <% if(!loggedIn){ %>
+              <a href="/auth/login" class="w3-bar-item w3-button w3-right w3-mobile">Login</a>
+              <a href="/auth/register" class="w3-bar-item w3-button w3-right w3-mobile">Register</a>
+          <% } %>
+          <% if(loggedIn){ %>
+              <a href="/catalog" class="w3-bar-item w3-button w3-mobile">Catalog</a>
+              <a href="/auth/logout" class="w3-bar-item w3-button w3-right w3-mobile">Logout</a>
+          <% } %>
+      </div>
+    </div>
+</nav>

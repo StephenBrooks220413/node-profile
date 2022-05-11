@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<!-- header -->
+<%- include('layouts/header') -%>
+<!-- header -->
+<body>
+<!-- navbar -->
+<%- include('layouts/navbar') -%>
+<!-- navbar -->
+
+<div class="intro-1">
+  <div class="w3-container">
+    <div class="row">
+      <div class="w3-col w3-text-white l12 md12 sm12">
+        <h1 class="title-1">YourStore</h1>
+        <h3 class="title-3">SubTitle</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- section -->
+<div class="w3-container" style="margin-top:60px; margin-bottom: 60px;">
+  <div class="row" style="padding: 30px;">
+    <div class="w3-col l6 md6 sm12">
+      <h1>YourStore</h1>
+      <p style="font-size: 17px;">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur inventore beatae nostrum? Distinctio, ut neque itaque eaque possimus omnis eum! Ullam fugiat assumenda voluptatibus vero, molestiae illo quod repudiandae!
+      </p>
+    </div>
+    <div class="w3-col w3-text-white l6 md6 sm12">
+      <img src="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80" 
+      class="img-fluid" alt="img" />
+    </div>
+  </div>
+</div>
+
+<div class="w3-container" style="margin-bottom: 60px;">
+  <div class="w3-card max-card-size">
+    <h1 class="card-title-3">intro card title</h1>
+    <span class="text">Follow Us On   </span> 
+    <i class="w3-xlarge fa fa-linkedin"></i>
+    <i class="w3-xlarge fa fa-facebook"></i>
+    <i class="w3-xlarge fa fa-twitter"></i>
+    <hr />
+    <p style="font-size: 17px;">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis porro id quod ipsam dolore a, distinctio accusamus temporibus? Reprehenderit iusto fugiat ab cupiditate officiis quidem modi esse voluptatibus iure unde!
+    </p>
+    <% if(loggedIn){ %>
+      <a href="/catalog" class="w3-bar w3-black w3-button w3-ripple" style="border-radius:4px;">Go To Catalog</a>
+    <% } %>
+    <% if(!loggedIn){ %>
+      <a href="/auth/register" class="w3-bar w3-black w3-button w3-ripple" style="border-radius:4px;">Signup To Order</a>
+    <% } %>
+  </div>
+</div>
+
+<section class="w3-container" style="margin-bottom:60px;">
+  <div class="w3-row section">
+    
+    <h1>Become A Member</h1>
+      <hr class="line" />
+    
+    <p class="text">
+      Sing up today to start building your own store! You send the suggestions that you 
+      are looking for for and we build your store based on your feedback!
+    </p>
+    <a href="/auth/register">
+      <img src="/img/membership.png" style="height:110px; width: 210px;" alt="membership" />
+    </a>
+  </div>
+</section>
+
+<%- include('layouts/footer') -%>
+
+</body>
+</html>

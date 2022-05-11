@@ -1,0 +1,23 @@
+nav {
+    font-size: 18px;
+    width: 100%;
+    color: #000;
+}
+
+#nav1 {
+    display: block;
+}
+
+#nav2 {
+    display: none;
+}
+
+@media(max-width:768px) {
+    #nav1 {
+        display: none;
+    }
+    
+    #nav2 {
+        display: block;
+    }
+}

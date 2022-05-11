@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<!-- header -->
+<%- include('layouts/header') -%>
+<!-- header -->
+<body>
+<!-- navbar -->
+<%- include('layouts/navbar') -%>
+<!-- navbar -->
+
+
+<!-- section -->
+<div class="w3-container max-card-size" style="margin-top:80px; margin-bottom: 90px;">
+  <h1>Login for members</h1>
+  <p>
+    Don't have an account? <a href="/auth/register" class="w3-text-blue">Register</a> here.
+  </p>
+  <form method="post" action="/users/login">
+    <label>UserName</label>
+    <input class="w3-input" name="username" type="text">
+    <br><br>
+    <label>Password</label>
+    <input class="w3-input" name="password" type="password">
+    <br><br>
+    <button type="submit" class="w3-bar w3-black w3-button w3-ripple" style="border-radius:4px;">Login</button>
+  </form>
+</div>
+
+
+<%- include('layouts/footer') -%>
+
+</body>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script></script>
+</html>

@@ -1,0 +1,70 @@
+.intro-1 { 
+    background: url(https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80) 
+    no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 250px;
+    padding-bottom: 190px;
+    text-align: center;
+}
+
+.title-1 {
+    font-size: 6rem;
+    color: rgb(241, 242, 242);
+}
+
+.title-3 {
+    font-size: 3rem;
+    color: rgb(241, 242, 242);
+}
+
+.img-fluid {
+    width: 100%;
+    max-height: 450px;
+    border-radius: 12px;
+    box-shadow: 11px 9px 13px 14px rgb(206, 203, 203);
+}
+
+.text {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.max-card-size {
+    padding: 20px; 
+    border-radius:7px; 
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-title-3 {
+    font-size: 3rem;
+    color: rgb(163, 166, 168);
+}
+
+.line {
+    width: 300px;
+    border: 1px solid grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.max-footer-size {
+    padding: 20px; 
+    border-radius:7px; 
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
